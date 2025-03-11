@@ -2,7 +2,7 @@ from itertools import chain, cycle
 from typing import Iterable, Literal, Union
 
 import pandas as pd
-from numpy import Inf, NaN
+from numpy import inf as Inf, nan as NaN
 from openpyxl import load_workbook
 from openpyxl.worksheet._read_only import ReadOnlyWorksheet
 from openpyxl.worksheet.table import Table

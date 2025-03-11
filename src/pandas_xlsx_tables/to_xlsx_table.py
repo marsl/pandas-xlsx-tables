@@ -55,8 +55,8 @@ def dfs_to_xlsx_tables(
             df = df.reset_index()
         if not nan_inf_to_errors:
             df = (
-                df.replace(np.Inf, np.finfo(np.float64).max)
-                .replace(-np.Inf, np.finfo(np.float64).min)
+                df.replace(np.inf, np.finfo(np.float64).max)
+                .replace(-np.inf, np.finfo(np.float64).min)
                 .fillna("")
             )
 
